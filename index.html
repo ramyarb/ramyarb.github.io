@@ -4,31 +4,37 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./styles/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-default">
+            <nav class="nav navbar navbar-dark bg-dark">
                 <div class="container-fluid">
                   <div class="navbar-header">
                     <a class="navbar-brand" href="#">Ramya Jayaraman's Portfolio</a>
                   </div>
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a data-toggle="tab" data-target="#about">Home</a></li>
-                    <li><a data-toggle="tab" data-target="#projects">Projects</a></li>
+                  <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item active" class="nav-item active"><button class="nav-link"  data-bs-toggle="tab"  data-bs-target="#about">Home</a></li>
+                    <li class="nav-item"><button class="nav-link"  data-bs-toggle="tab"  data-bs-target="#projects">Projects</a></li>
     
-                  </ul>
+                    </ul>
                 </div>
               </nav>
               </header>
         <main>
               <div class="container">
-                <div id="#about"><iframe src="about.html">Home</iframe></div>
-                <div id="#projects"><iframe src="projects.html">Projects</iframe></div>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" role="tabpanel" id="about"><iframe src="about.html">Home</iframe></div>
+                        <div class="tab-pane fade " role="tabpanel"  id="projects"><iframe src="projects.html">Projects</iframe></div>
+                    </div>
                 </div>
-            </main>
+         </main>
         <footer>
 
         </footer>
